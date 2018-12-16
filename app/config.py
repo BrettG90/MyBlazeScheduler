@@ -7,10 +7,10 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class DefaultConfig:
     DEBUG = False
     ENV = "prod"  # leave this
-    URL = os.environ.get("BASE_URL", "https://suite.staffjoy.com")
+    URL = os.environ.get("BASE_URL", "https://brettg90.github.io/MyBlazeScheduler/")
 
     # Toggle this if you don't want randoms from the internet creating companies
-    ALLOW_COMPANY_SIGNUPS = True
+    ALLOW_COMPANY_SIGNUPS = false
 
     MANDRILL_API_KEY = os.environ.get("MANDRILL_API_KEY")
     FROM_EMAIL = os.environ.get("FROM_EMAIL")
