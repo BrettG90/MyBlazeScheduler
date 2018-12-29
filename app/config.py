@@ -7,21 +7,21 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class DefaultConfig:
     DEBUG = False
     ENV = "prod"  # leave this
-    URL = os.environ.get("BASE_URL", "https://brettg90.github.io/MyBlazeScheduler/")
+    URL = os.environ.get("BASE_URL", "https://myblazeops.com/")
 
     # Toggle this if you don't want randoms from the internet creating companies
-    ALLOW_COMPANY_SIGNUPS = false
+    ALLOW_COMPANY_SIGNUPS = True
 
     MANDRILL_API_KEY = os.environ.get("MANDRILL_API_KEY")
-    FROM_EMAIL = os.environ.get("FROM_EMAIL")
+    FROM_EMAIL = os.environ.get("brettgoodrich1990@gmail.com")
 
-    RECAPTCHA_PUBLIC_KEY = os.environ.get("RECAPTCHA_PUBLIC_KEY")
-    RECAPTCHA_PRIVATE_KEY = os.environ.get("RECAPTCHA_PRIVATE_KEY")
+    RECAPTCHA_PUBLIC_KEY = os.environ.get("6LcagoUUAAAAAB2GE1b1coCq2KarqLHXpVt6EGts")
+    RECAPTCHA_PRIVATE_KEY = os.environ.get("6LcagoUUAAAAAAwLbbg5Q4nr_yOiz02xD5n5A4v6")
     RECAPTCHA_USE_SSL = True
 
     # Redis - mostly from defaults
-    REDIS_HOST = os.environ.get("REDIS_HOST", "localhost")
-    REDIS_PORT = os.environ.get("REDIS_PORT", 6379)
+    REDIS_HOST = os.environ.get("REDIS_HOST", "myblazescheduler.hxqnbj.0001.usw1.cache.amazonaws.com:11211")
+    REDIS_PORT = os.environ.get("REDIS_PORT", 11211)
     REDIS_DATABASE = os.environ.get("REDIS_DATABASE", 0)
 
     SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
@@ -29,7 +29,7 @@ class DefaultConfig:
     SECRET_KEY = os.environ.get("SECRET_KEY")
 
     # Link to job application form
-    CAREER_APPLICATION_URL = "https://staffjoy.com"
+    CAREER_APPLICATION_URL = "https://myblazeops.com"
 
     # Incident Tracking (optional) 
     STATUS_PAGE_ID = os.environ.get("STATUS_PAGE_ID")
